@@ -1,14 +1,13 @@
-rDrafts Prototype
+reddit2twitter
 =========
-
-rDrafts is a third party application that lets you draft a reddit post, preview it, share it with others, save it for later, and ultimately submit it to reddit. This application interfaces with reddit, but has no affiliation with reddit inc.
+A python app for managing multiple bots that tweet content from Reddit. The app is built using Flask and is setup to be hosted for free on Heroku.
 
 Contribution Guidelines
 ========
 
-This repo is not setup to accept changes at this time. Email me if you want to contribute.
+This project is not setup to accept changes via github at this time, but please email me if you'd like to contribute (see my profile for email address).
 
 License
 ========
 
-This code is permitted to be used and distributed under the <a href="http://beta.easyama.co/LICENSE.txt" target="_blank">GPL license</a>.
+This code is permitted to be used and distributed under the GPL license.
