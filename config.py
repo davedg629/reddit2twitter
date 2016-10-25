@@ -66,3 +66,8 @@ if os.environ.get('OAUTH_REFRESH_TOKEN') is None:
     OAUTH_REFRESH_TOKEN = 'http://localhost:5000/authorize'
 else:
     OAUTH_REFRESH_TOKEN = os.environ.get('OAUTH_REFRESH_TOKEN')
+
+if os.environ.get('REDDIT_CRAWL_COUNT') is None:
+    REDDIT_CRAWL_COUNT = 15
+else:
+    REDDIT_CRAWL_COUNT = os.environ.get('REDDIT_CRAWL_COUNT')
