@@ -19,7 +19,7 @@ for user in TwitterAccount.query.all():
     for source in user.sources:
         subreddit = r.get_subreddit(source.subreddit)
         for thread in \
-                subreddit.get_new(limit=app.config['REDDIT_CRAWL_COUNT']):
+                subreddit.get_new(limit=int(app.config['REDDIT_CRAWL_COUNT'])):
             if (thread.score >= source.threshold):
                 tweet = Tweet.query\
                     .filter_by(source_id=source.id)\
