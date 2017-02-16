@@ -3,9 +3,9 @@ from app.models import Tweet
 import time
 
 
-cutoff_dats = 60
+cutoff_days = 120
 now = time.time()
-time_60_ago = now - 60 * 60 * 24 * 60
+time_60_ago = now - 60 * 60 * 24 * cutoff_days
 
 tweets = Tweet.query\
     .filter(Tweet.date_posted < time_60_ago)\
