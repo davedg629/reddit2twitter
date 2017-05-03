@@ -5,10 +5,10 @@ import time
 
 cutoff_days = 120
 now = time.time()
-time_60_ago = now - 60 * 60 * 24 * cutoff_days
+time_ago = now - 60 * 60 * 24 * cutoff_days
 
 tweets = Tweet.query\
-    .filter(Tweet.date_posted < time_60_ago)\
+    .filter(Tweet.date_posted < time_ago)\
     .all()
 
 for tweet in tweets:
